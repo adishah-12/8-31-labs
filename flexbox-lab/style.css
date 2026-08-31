@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #075d5b;
+    font-family: Helvetica;
+}
+
+.profile-card {
+    width: 182px;
+    display: grid;
+    grid-template-rows: 125px 55px 70px 44px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.profile-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.avatar {
+    width: 72px;
+    height: 72px;
+    border: 2px solid #63d08b;
+    border-radius: 50%;
+}
+
+.name {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: #f2f2f2;
+}
+
+.stars {
+    width: 88px;
+    height: auto;
+}
+
+.specialty {
+    color: #666;
+    font-size: 15px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.action {
+    border: 0;
+    background: #64cf88;
+    cursor: pointer;
+}
+
+/* applies the darker color to the second button */
+.action + .action {
+    background: #55bd79;
+}
+
+.action:hover {
+    filter: brightness(0.95);
+}
